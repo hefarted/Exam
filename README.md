@@ -66,8 +66,14 @@ Copy code
 Report Template:
 
 ```txt Name: <field-firstname> <field-lastname>
+Person Details:
+================
+Name: <field-firstname> <field-lastname>
 Age: <field-age>
 Email: <field-email>
+
+--------------------
+
 When generating a report, the application replaces these placeholders with actual values from the JSON data to produce the final report.
 ```
 ## Test
