@@ -107,6 +107,40 @@ The application follows the MVC (Model-View-Controller) architectural pattern. I
 - Error handling for invalid input data and missing template path.
 - Asynchronous processing for improved scalability.
 
+## Docker Build and Run Guide for Exam Application
+
+This guide will walk you through the process of building and running a Docker container for the Exam application.
+
+### Prerequisites
+- Docker installed on your system. You can download it from Docker's official website: https://www.docker.com/get-started
+
+### Building the Docker Image
+1. Clone the repository containing the Exam application code.
+2. Navigate to the root directory of the repository.
+3. Create a new file named `Dockerfile` in the root directory and paste the following contents:
+
+```Dockerfile
+[Content of the Dockerfile]
+
+Open a terminal or command prompt and navigate to the root directory of the repository.
+Run the following command to build the Docker image:
+
+docker build -t exam-application .
+
+Running the Docker Container
+Once the Docker image is built, you can run the container using the following steps:
+
+Run the following command to start the Docker container:
+
+docker run -d -p 8080:8080 -p 8081:8081 exam-application
+
+Accessing the Application
+Once the container is running, you can access the Exam application by opening a web browser and navigating to http://localhost:8080 or http://localhost:8081.
+Additional Notes
+Make sure ports 8080 and 8081 are not being used by any other processes on your system.
+Adjust the Dockerfile or Docker run command if you need to customize any parameters such as ports or build configurations.
+
+
 ### Limitations and Known Issues
 
 - Currently, the application does not handle large JSON data or file uploads gracefully. This could be improved in future versions.
