@@ -11,6 +11,7 @@ This project implements a WebAPI for a coding challenge. It provides an endpoint
 - [Design Decisions](#design-decisions)
 - [Contributing](#contributing)
 - [License](#license)
+- [Building Docker] (#building-the-docker-image)
 
 ## Build
 
