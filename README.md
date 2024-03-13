@@ -6,6 +6,7 @@ This project implements a WebAPI for a coding challenge. It provides an endpoint
 
 - [Build](#build)
 - [Run](#run)
+- [Sample Data](#sample-data)
 - [Test](#test)
 - [Design Decisions](#design-decisions)
 - [Contributing](#contributing)
@@ -47,6 +48,28 @@ No special configuration is required.
    dotnet run --project Exam.csproj
    ```
 
+## Sample Data
+
+The sample data used in this application is provided in JSON format:
+
+```json
+"[{\"firstname\":\"John\",\"lastname\":\"Doe\",\"age\":30,\"email\":\"john.doe@example.com\"},{\"firstname\":\"Jane\",\"lastname\":\"Smith\",\"age\":25,\"email\":\"jane.smith@example.com\"}]"
+ ```
+## Report Template Configuration
+
+The report template is a text document that includes placeholders for dynamic data insertion. Each placeholder corresponds to a field in the JSON data. For example, <field-firstname> represents the first name field, <field-lastname> represents the last name field, and so on.
+
+Here's an example of a report template configuration:
+
+php
+Copy code
+Report Template:
+
+```txt Name: <field-firstname> <field-lastname>
+Age: <field-age>
+Email: <field-email>
+When generating a report, the application replaces these placeholders with actual values from the JSON data to produce the final report.
+```
 ## Test
 
 To run tests for the project, follow these steps:
