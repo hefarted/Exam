@@ -81,6 +81,8 @@ The application follows the MVC (Model-View-Controller) architectural pattern. I
 ### Limitations and Known Issues
 
 - Currently, the application does not handle large JSON data or file uploads gracefully. This could be improved in future versions.
+- Unit test for 10000000 data. (only)
+- Unit test for 50mb data. (only)
 
 ## Contributing
 
