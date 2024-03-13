@@ -10,8 +10,9 @@ This project implements a WebAPI for a coding challenge. It provides an endpoint
 - [Test](#test)
 - [Design Decisions](#design-decisions)
 - [Contributing](#contributing)
+- [Building Docker](#building-the-docker-image)
 - [License](#license)
-- [Building Docker] (#building-the-docker-image)
+
 
 ## Build
 
