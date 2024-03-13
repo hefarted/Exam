@@ -43,7 +43,7 @@ namespace CodingChallengeTests
         public async Task GenerateReportAsync_LargeData_ReturnsFileResult()
         {
             // Arrange
-            const int largeDataCount = 1000000;
+            const int largeDataCount = 10000000;
             var jsonData = GenerateLargeJsonData(largeDataCount);
             string templatePath = "path/to/template";
             byte[] reportBytes = new byte[] { 0x00, 0x01, 0x02 }; // Example report bytes

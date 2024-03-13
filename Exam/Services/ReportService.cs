@@ -13,10 +13,6 @@ public class ReportService : IReportService
         // Read the template file
         string template = await File.ReadAllTextAsync(templatePath);
 
-        // Parse the JSON data
-        // Here you might use Newtonsoft.Json to deserialize the JSON data into objects
-        // For simplicity, we assume jsonData is already deserialized
-        // into a collection of objects
         var dataRows = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(test);
 
         // Generate the report
