@@ -67,7 +67,7 @@ The application follows the MVC (Model-View-Controller) architectural pattern. I
 
 ### Technologies Used
 
-- ASP.NET Core 3.1
+- ASP.NET Core 8.0
 - C#
 - Newtonsoft.Json
 - xUnit (for unit testing)
